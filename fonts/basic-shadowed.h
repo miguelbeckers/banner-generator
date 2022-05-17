@@ -1,7 +1,8 @@
-#include "../types.h"
+#include "_types.h"
 
-static const struct TFont BASIC_SHADOWED = {
+struct TFont BASIC_SHADOWED = {
 
+    .spacing = 1,
     .A = {.height = 6,
           .width = 7,
           .content = " ████  \n"

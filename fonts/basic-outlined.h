@@ -1,7 +1,8 @@
-#include "../types.h"
+#include "_types.h"
 
-static const struct TFont BASIC_OUTLINED = {
+struct TFont BASIC_OUTLINED = {
 
+    .spacing = 0,
     .A = {.height = 6,
           .width = 8,
           .content = " ┌████┐ \n"
@@ -148,7 +149,7 @@ static const struct TFont BASIC_OUTLINED = {
                      "│██├┐██┐\n"
                      "└──┘└──┘\n"},
     .S = {.height = 6,
-          .width = 8, 
+          .width = 8,
           .content = "┌██████┐\n"
                      "│██┌───┘\n"
                      "│██████┐\n"

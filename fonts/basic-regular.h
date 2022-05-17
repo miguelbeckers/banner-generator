@@ -1,7 +1,8 @@
-#include "../types.h"
+#include "_types.h"
 
-static const struct TFont BASIC_REGULAR = {
+struct TFont BASIC_REGULAR = {
 
+    .spacing = 1,
     .A = {.height = 5,
           .width = 6,
           .content = " ████ \n"

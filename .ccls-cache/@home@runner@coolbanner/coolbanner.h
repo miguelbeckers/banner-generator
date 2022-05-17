@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "types.h"
 
 #include "fonts/basic-linear.h"
 #include "fonts/basic-outlined.h"
@@ -49,12 +48,12 @@ void printLetter(struct TLetter letter) {
   moveCursorRight(letter.width);
 }
 
-void printBanner(char *text, struct TFont font, char *color, int spacing) {
+void printBanner(char *text, struct TFont font, char *color) {
   printf("%s", color);
 
   for (int i = 0; i < strlen(text); i++) {
-    if (spacing > 0)
-      moveCursorRight(spacing);
+    if (font.spacing > 0)
+      moveCursorRight(font.spacing);
 
     switch (text[i]) {
     case 'a':

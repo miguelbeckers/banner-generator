@@ -1,0 +1,7 @@
+/.ccls-cache
+main
+main.d
+main.o
+Makefile
+.replit
+replit.nix

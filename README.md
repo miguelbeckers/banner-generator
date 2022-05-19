@@ -53,10 +53,9 @@ Run this exemple project [here](https://replit.com/@miguelbeckers/coolbanner) to
  ██████ ████  ██ ███ ██  ██ ██    ██████ ██████
  ██ ██  ██    ██  ██ ██  ██ ██    ██  ██ ██ ██
  ██  ██ █████ ██████ ██████ █████ ██  ██ ██  ██
- 
  ```
 
 ## ⚠️ Note
 
-* This project was made to work on Replit so it may not work locally depending the setup.
-* A new version compatible with windows and C11 will be available soon.
+* This project was made to work on Replit so, it may not work locally depending the setup.
+* A new version compatible with windows and C11 will be available soon!

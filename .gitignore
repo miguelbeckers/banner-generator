@@ -1,5 +1,5 @@
 /main.exe
 /.vscode/
 /.ccls-cache/
-/.breakpoints/
-/a.exe/
+/.breakpoints
+/a.exe

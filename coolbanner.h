@@ -6,6 +6,7 @@
 #include "fonts/basic-regular.h"
 #include "fonts/basic-shadowed.h"
 
+#define WHITE "\x1b[0m"
 #define RED "\x1b[31m"
 #define GREEN "\x1b[32m"
 #define YELLOW "\x1b[33m"
@@ -18,7 +19,6 @@
 #define LIGHT_BLUE "\e[0;94m"
 #define LIGHT_MAGENTA "\e[1;95m"
 #define LIGHT_CYAN "\e[1;96m"
-#define NO_COLOR "\x1b[0m"
 
 void moveCursorUp(int n) { printf("\033[%dA", n); }
 void moveCursorDown(int n) { printf("\033[%dB", n); }
@@ -336,5 +336,5 @@ void printBanner(char *text, struct TFont font, char *color) {
     }
   }
 
-  printf("%s", NO_COLOR);
+  printf("%s", WHITE);
 }

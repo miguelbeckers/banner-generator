@@ -3,26 +3,29 @@
 #include <stdlib.h>
 #include <string.h>
 
+static const int STRING_SIZE = 30;
+static const int LINE_SIZE = 10;
+
 void pauseSystem();
 void clearBuffer();
+void formatText();
 
 int main(void) {
-  //printBanner("COOL\n", BASIC_SHADOWED, RED);
-  printBanner("REGULAR\n", BASIC_REGULAR, BLUE);
-  printBanner("LINEAR\n", BASIC_LINEAR, RED);
-  printBanner("SHADOWED\n", BASIC_SHADOWED, GREEN);
-  printBanner("OUTLINED\n", BASIC_OUTLINED, YELLOW);
-  
+  printBanner("COOL\n", BASIC_SHADOWED, RED);
+  printBanner("BANNER\n", BASIC_OUTLINED, BLUE);
+
   pauseSystem();
 
   while (1) {
     struct TFont *font;
     char *color;
-    char text[30];
+    char text[STRING_SIZE];
+    char formated[STRING_SIZE + STRING_SIZE / LINE_SIZE];
     int option = 0;
 
     printf("Insert your text: ");
     fgets(text, sizeof(text), stdin);
+    formatText(text, formated);
 
     do {
       printf("\n1 - Basic_outlined");
@@ -30,12 +33,12 @@ int main(void) {
       printf("\n3 - Basic_linear");
       printf("\n4 - Basic_regular\n");
       printf("\nChoose a font: ");
-      
+
       if (scanf("%d", &option) != 1)
         clearBuffer();
 
       if (option < 1 || option > 4)
-        printf("\n%sInvalid option%s\n", RED, NO_COLOR);
+        printf("\n%sInvalid option%s\n", RED, WHITE);
 
     } while (option < 1 || option > 4);
 
@@ -53,9 +56,9 @@ int main(void) {
       font = &BASIC_REGULAR;
       break;
     }
-    
+
     option = 0;
-    
+
     do {
       printf("\n1 - Red");
       printf("\n2 - Blue");
@@ -65,12 +68,12 @@ int main(void) {
       printf("\n6 - Cyan");
       printf("\n7 - No color\n");
       printf("\nChoose a color: ");
-      
-      if (scanf("%d", &option) != 1) 
+
+      if (scanf("%d", &option) != 1)
         clearBuffer();
 
       if (option < 1 || option > 7)
-        printf("\n%sInvalid option%s\n", RED, NO_COLOR);
+        printf("\n%sInvalid option%s\n", RED, WHITE);
 
     } while (option < 1 || option > 7);
 
@@ -94,18 +97,34 @@ int main(void) {
       color = CYAN;
       break;
     case 7:
-      color = NO_COLOR;
+      color = WHITE;
       break;
     }
 
     printf("\nHere is your banner!\n\n");
-    printBanner(text, *font, color);
+    printBanner(formated, *font, color);
 
     clearBuffer();
     pauseSystem();
   }
 
   return 0;
+}
+
+void formatText(char text[], char formated[]) {
+  int count = 0;
+
+  for (int i = 0; i < strlen(text); i++) {
+    formated[count] = text[i];
+    count++;
+
+    if (i % 10 == 0 && i != 0 && text[i + 1] != '\0') {
+      formated[count] = '\n';
+      count++;
+    }
+  }
+
+  formated[count] = '\0';
 }
 
 void pauseSystem() {

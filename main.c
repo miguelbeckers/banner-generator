@@ -101,6 +101,7 @@ int main(void) {
       break;
     }
 
+    system("clear");
     printf("\nHere is your banner!\n\n");
     printBanner(formated, *font, color);
 

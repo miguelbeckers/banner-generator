@@ -53,7 +53,6 @@ Run this exemple project [here](https://replit.com/@miguelbeckers/coolbanner) to
  ██████ ████  ██ ███ ██  ██ ██    ██████ ██████
  ██ ██  ██    ██  ██ ██  ██ ██    ██  ██ ██ ██ 
  ██  ██ █████ ██████ ██████ █████ ██  ██ ██  ██ 
- 
  ```
 
 ## ⚠️ Note

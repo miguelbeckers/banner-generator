@@ -119,7 +119,7 @@ void formatText(char text[], char formated[]) {
     formated[count] = text[i];
     count++;
 
-    if (i % 10 == 0 && i != 0 && text[i + 1] != '\0') {
+    if (i % 10 == 0 && i != 0) {
       formated[count] = '\n';
       count++;
     }

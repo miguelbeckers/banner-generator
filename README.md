@@ -23,7 +23,7 @@ Run this exemple project [here](https://replit.com/@miguelbeckers/coolbanner) to
 * BASIC_LINEAR: <br/>
 ![](https://user-images.githubusercontent.com/52552717/169815713-7ecc7fe0-c918-4683-981a-c64847e75128.png)
 * BASIC_REGULAR: <br/>
-![regular](https://user-images.githubusercontent.com/52552717/169816005-c349e6c8-1506-42c1-b911-354e5161ad49.png)
+![](https://user-images.githubusercontent.com/52552717/169816005-c349e6c8-1506-42c1-b911-354e5161ad49.png)
 
 ## ⚠️ Note
 

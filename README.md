@@ -17,13 +17,13 @@ Run this exemple project [here](https://replit.com/@miguelbeckers/coolbanner) to
 ## ✒️ Available fonts
 
 * BASIC_SHADOWED: <br/>
-![shadowed](https://user-images.githubusercontent.com/52552717/169814013-6504f254-84b8-4a81-a862-5107dc5a3ee0.png)
+![](https://user-images.githubusercontent.com/52552717/169814013-6504f254-84b8-4a81-a862-5107dc5a3ee0.png)
 * BASIC_OUTLINED: <br/>
-![outlined](https://user-images.githubusercontent.com/52552717/169814577-0e4be0e8-94fc-47c5-b2ec-f1b1471ceaec.png)
+![](https://user-images.githubusercontent.com/52552717/169814577-0e4be0e8-94fc-47c5-b2ec-f1b1471ceaec.png)
 * BASIC_LINEAR: <br/>
-![image](https://user-images.githubusercontent.com/52552717/169813121-bbb201f1-2bbd-4df4-bf27-a829009da887.png)
+![](https://user-images.githubusercontent.com/52552717/169815713-7ecc7fe0-c918-4683-981a-c64847e75128.png)
 * BASIC_REGULAR: <br/>
-![image](https://user-images.githubusercontent.com/52552717/169813162-0548a49d-f936-4099-94eb-dbe318090721.png)
+![regular](https://user-images.githubusercontent.com/52552717/169816005-c349e6c8-1506-42c1-b911-354e5161ad49.png)
 
 ## ⚠️ Note
 

@@ -17,6 +17,7 @@ Run this exemple project [here](https://replit.com/@miguelbeckers/coolbanner) to
 1. Call the function `printBanner` passing a string, a font and a color as arguments
 
 ## ✒️ Available fonts
+<img src="https://user-images.githubusercontent.com/52552717/170623191-a4584904-7399-4fac-b311-11564eb6b6e3.svg" height="100">
 
 * BASIC_SHADOWED: <br/>
 ![](https://user-images.githubusercontent.com/52552717/169814013-6504f254-84b8-4a81-a862-5107dc5a3ee0.png)

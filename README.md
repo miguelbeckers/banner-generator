@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/52552717/170612124-89d4efe1-a88e-496f-ae62-91c9772d562e.svg" height="100" />
+# COOLBANNER
 
 ## 📜 Description
 

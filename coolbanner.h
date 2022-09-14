@@ -27,10 +27,10 @@ void moveCursorLeft(int n) { printf("\033[%dD", n); }
 void saveCursorPosition() { printf("\033[s"); }
 void restoreCursorPosition() { printf("\033[u"); }
 
-void printLetter(struct TLetter letter) {
+void printLetter(struct Letter letter) {
   int count = 0;
   saveCursorPosition();
-  
+
   for (int i = 0; i < letter.height; i++) {
     while (letter.content[count] != '\n') {
       if (letter.content[count] == ' ') {
@@ -48,7 +48,7 @@ void printLetter(struct TLetter letter) {
   moveCursorRight(letter.width);
 }
 
-void printBanner(char *text, struct TFont font, char *color) {
+void printBanner(char *text, struct Font font, char *color) {
   printf("%s", color);
 
   for (int i = 0; i < strlen(text); i++) {
@@ -56,278 +56,293 @@ void printBanner(char *text, struct TFont font, char *color) {
       moveCursorRight(font.spacing);
 
     switch (text[i]) {
-    case 'a':
-      printLetter(font.a);
+    case 32:
+      printLetter(font.c032);
       break;
-    case 'b':
-      printLetter(font.b);
+    case 33:
+      printLetter(font.c033);
       break;
-    case 'c':
-      printLetter(font.c);
+    case 34:
+      printLetter(font.c034);
       break;
-    case 'd':
-      printLetter(font.d);
+    case 35:
+      printLetter(font.c035);
       break;
-    case 'e':
-      printLetter(font.e);
+    case 36:
+      printLetter(font.c036);
       break;
-    case 'f':
-      printLetter(font.f);
+    case 37:
+      printLetter(font.c037);
       break;
-    case 'g':
-      printLetter(font.g);
+    case 38:
+      printLetter(font.c038);
       break;
-    case 'h':
-      printLetter(font.h);
+    case 39:
+      printLetter(font.c039);
       break;
-    case 'i':
-      printLetter(font.i);
+    case 40:
+      printLetter(font.c040);
       break;
-    case 'j':
-      printLetter(font.j);
+    case 41:
+      printLetter(font.c041);
       break;
-    case 'k':
-      printLetter(font.k);
+    case 42:
+      printLetter(font.c042);
       break;
-    case 'l':
-      printLetter(font.l);
+    case 43:
+      printLetter(font.c043);
       break;
-    case 'm':
-      printLetter(font.m);
+    case 44:
+      printLetter(font.c044);
       break;
-    case 'n':
-      printLetter(font.n);
+    case 45:
+      printLetter(font.c045);
       break;
-    case 'o':
-      printLetter(font.o);
+    case 46:
+      printLetter(font.c046);
       break;
-    case 'p':
-      printLetter(font.p);
+    case 47:
+      printLetter(font.c047);
       break;
-    case 'q':
-      printLetter(font.q);
+    case 48:
+      printLetter(font.c048);
       break;
-    case 'r':
-      printLetter(font.r);
+    case 49:
+      printLetter(font.c049);
       break;
-    case 's':
-      printLetter(font.s);
+    case 50:
+      printLetter(font.c050);
       break;
-    case 't':
-      printLetter(font.t);
+    case 51:
+      printLetter(font.c051);
       break;
-    case 'u':
-      printLetter(font.u);
+    case 52:
+      printLetter(font.c052);
       break;
-    case 'v':
-      printLetter(font.v);
+    case 53:
+      printLetter(font.c053);
       break;
-    case 'w':
-      printLetter(font.w);
+    case 54:
+      printLetter(font.c054);
       break;
-    case 'x':
-      printLetter(font.x);
+    case 55:
+      printLetter(font.c055);
       break;
-    case 'y':
-      printLetter(font.y);
+    case 56:
+      printLetter(font.c056);
       break;
-    case 'z':
-      printLetter(font.z);
+    case 57:
+      printLetter(font.c057);
       break;
-    case 'A':
-      printLetter(font.A);
+    case 58:
+      printLetter(font.c058);
       break;
-    case 'B':
-      printLetter(font.B);
+    case 59:
+      printLetter(font.c059);
       break;
-    case 'C':
-      printLetter(font.C);
+    case 60:
+      printLetter(font.c060);
       break;
-    case 'D':
-      printLetter(font.D);
+    case 61:
+      printLetter(font.c061);
       break;
-    case 'E':
-      printLetter(font.E);
+    case 62:
+      printLetter(font.c062);
       break;
-    case 'F':
-      printLetter(font.F);
+    case 63:
+      printLetter(font.c063);
       break;
-    case 'G':
-      printLetter(font.G);
+    case 64:
+      printLetter(font.c064);
       break;
-    case 'H':
-      printLetter(font.H);
+    case 65:
+      printLetter(font.c065);
       break;
-    case 'I':
-      printLetter(font.I);
+    case 66:
+      printLetter(font.c066);
       break;
-    case 'J':
-      printLetter(font.J);
+    case 67:
+      printLetter(font.c067);
       break;
-    case 'K':
-      printLetter(font.K);
+    case 68:
+      printLetter(font.c068);
       break;
-    case 'L':
-      printLetter(font.L);
+    case 69:
+      printLetter(font.c069);
       break;
-    case 'M':
-      printLetter(font.M);
+    case 70:
+      printLetter(font.c070);
       break;
-    case 'N':
-      printLetter(font.N);
+    case 71:
+      printLetter(font.c071);
       break;
-    case 'O':
-      printLetter(font.O);
+    case 72:
+      printLetter(font.c072);
       break;
-    case 'P':
-      printLetter(font.P);
+    case 73:
+      printLetter(font.c073);
       break;
-    case 'Q':
-      printLetter(font.Q);
+    case 74:
+      printLetter(font.c074);
       break;
-    case 'R':
-      printLetter(font.R);
+    case 75:
+      printLetter(font.c075);
       break;
-    case 'S':
-      printLetter(font.S);
+    case 76:
+      printLetter(font.c076);
       break;
-    case 'T':
-      printLetter(font.T);
+    case 77:
+      printLetter(font.c077);
       break;
-    case 'U':
-      printLetter(font.U);
+    case 78:
+      printLetter(font.c078);
       break;
-    case 'V':
-      printLetter(font.V);
+    case 79:
+      printLetter(font.c079);
       break;
-    case 'W':
-      printLetter(font.W);
+    case 80:
+      printLetter(font.c080);
       break;
-    case 'X':
-      printLetter(font.X);
+    case 81:
+      printLetter(font.c081);
       break;
-    case 'Y':
-      printLetter(font.Y);
+    case 82:
+      printLetter(font.c082);
       break;
-    case 'Z':
-      printLetter(font.Z);
+    case 83:
+      printLetter(font.c083);
       break;
-    case '0':
-      printLetter(font.n0);
+    case 84:
+      printLetter(font.c084);
       break;
-    case '1':
-      printLetter(font.n1);
+    case 85:
+      printLetter(font.c085);
       break;
-    case '2':
-      printLetter(font.n2);
+    case 86:
+      printLetter(font.c086);
       break;
-    case '3':
-      printLetter(font.n3);
+    case 87:
+      printLetter(font.c087);
       break;
-    case '4':
-      printLetter(font.n4);
+    case 88:
+      printLetter(font.c088);
       break;
-    case '5':
-      printLetter(font.n5);
+    case 89:
+      printLetter(font.c089);
       break;
-    case '6':
-      printLetter(font.n6);
+    case 90:
+      printLetter(font.c090);
       break;
-    case '7':
-      printLetter(font.n7);
+    case 91:
+      printLetter(font.c092);
       break;
-    case '8':
-      printLetter(font.n8);
+    case 92:
+      printLetter(font.c092);
       break;
-    case '9':
-      printLetter(font.n9);
+    case 93:
+      printLetter(font.c093);
       break;
-    case '.':
-      printLetter(font.dot);
+    case 94:
+      printLetter(font.c094);
       break;
-    case ':':
-      printLetter(font.colon);
+    case 95:
+      printLetter(font.c095);
       break;
-    case ',':
-      printLetter(font.coma);
+    case 96:
+      printLetter(font.c096);
       break;
-    case ';':
-      printLetter(font.semicolon);
+    case 97:
+      printLetter(font.c097);
       break;
-    case '\'':
-      printLetter(font.aphostrophe);
+    case 98:
+      printLetter(font.c098);
       break;
-    case '"':
-      printLetter(font.quotationMark);
+    case 99:
+      printLetter(font.c099);
       break;
-    case '?':
-      printLetter(font.questionMark);
+    case 100:
+      printLetter(font.c100);
       break;
-    case '!':
-      printLetter(font.exclamationMark);
+    case 101:
+      printLetter(font.c101);
       break;
-    case '(':
-      printLetter(font.openParentheses);
+    case 102:
+      printLetter(font.c102);
       break;
-    case ')':
-      printLetter(font.closeParentheses);
+    case 103:
+      printLetter(font.c103);
       break;
-    case '{':
-      printLetter(font.openCurlyBrace);
+    case 104:
+      printLetter(font.c104);
       break;
-    case '}':
-      printLetter(font.closeCurlyBrace);
+    case 105:
+      printLetter(font.c105);
       break;
-    case '[':
-      printLetter(font.openBracket);
+    case 106:
+      printLetter(font.c106);
       break;
-    case ']':
-      printLetter(font.closeBracket);
+    case 107:
+      printLetter(font.c107);
       break;
-    case '+':
-      printLetter(font.plus);
+    case 108:
+      printLetter(font.c108);
       break;
-    case '-':
-      printLetter(font.minus);
+    case 109:
+      printLetter(font.c109);
       break;
-    case '*':
-      printLetter(font.asterisk);
+    case 110:
+      printLetter(font.c110);
       break;
-    case '/':
-      printLetter(font.slash);
+    case 111:
+      printLetter(font.c111);
       break;
-    case '=':
-      printLetter(font.equals);
+    case 112:
+      printLetter(font.c112);
       break;
-    case '@':
-      printLetter(font.at);
+    case 113:
+      printLetter(font.c113);
       break;
-    case '$':
-      printLetter(font.dollar);
+    case 114:
+      printLetter(font.c114);
       break;
-    case '%':
-      printLetter(font.percent);
+    case 115:
+      printLetter(font.c115);
       break;
-    case '&':
-      printLetter(font.ampersand);
+    case 116:
+      printLetter(font.c116);
       break;
-    case '_':
-      printLetter(font.underline);
+    case 117:
+      printLetter(font.c117);
       break;
-    case '\\':
-      printLetter(font.backslash);
+    case 118:
+      printLetter(font.c118);
       break;
-    case '^':
-      printLetter(font.circumflex);
+    case 119:
+      printLetter(font.c119);
       break;
-    case '~':
-      printLetter(font.tilde);
-      break;     
-    case ' ':
-      moveCursorRight(2);
+    case 120:
+      printLetter(font.c120);
+      break;
+    case 121:
+      printLetter(font.c121);
+      break;
+    case 122:
+      printLetter(font.c122);
+      break;
+    case 123:
+      printLetter(font.c123);
+      break;
+    case 124:
+      printLetter(font.c124);
+      break;
+    case 125:
+      printLetter(font.c125);
+      break;
+    case 126:
+      printLetter(font.c126);
       break;
     case '\n':
-      moveCursorDown(font.A.height);
+      moveCursorDown(font.c032.height);
       printf("\n");
       break;
     default:

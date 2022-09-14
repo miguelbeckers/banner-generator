@@ -17,7 +17,7 @@ int main(void) {
   pauseSystem();
 
   while (1) {
-    struct TFont *font;
+    struct Font *font;
     char *color;
     char text[STRING_SIZE];
     char formated[STRING_SIZE + STRING_SIZE / LINE_SIZE];
